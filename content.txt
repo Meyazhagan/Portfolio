@@ -1,0 +1,92 @@
+I Meyazhagan and I'm a Full Stack Web Application Developer
+
+ABOUT ME -
+
+who am I?
+name: MEYAZHAGAN
+job: Full Stack Web Application Developer
+from: Namakkal, Tamil Nadu
+degree: Bachelor in Electronics
+
+Hello,
+My name is Meyazhagan.
+
+I'm a Full Stack Web Application Developer, 
+I have been studying web development and I develope primarily with React and Node.js, 
+though I have a good knownledge of Python, Java.
+
+I used to provide responsive front end interfaces and back end development, 
+Single Page Web Applications to meet both technical and consumer needs, and 
+see through a project from conception to the end product. 
+Also I got the ability to work with many frameworks, and client and server side languages.
+
+Thank you, Enjoy.
+
+v2
+
+"A fresher with experience", this line says exactly who he is. He is a software developer who crafts beautiful web and apps. His perfect balance of technical & managerial skills stands him apart from the crowd.
+
+My areas of interest include problem-solving, cloud infrastructure, machine learning, and IoT.
+
+With a detail oriented-focus, I enjoy creating simple but effective solutions to improve application performance, ease of maintenance, and user experience.
+
+
+SKILL - 
+frontend
+    HTML/HTML5
+    CSS/CSS3
+    JavaScript/ES6
+
+    REACT JS
+    REACT ROUTER
+    REDUX
+
+backend
+    NODE JS
+    EXPRESS
+
+    REST API STANDARDS
+    GRAPH QL
+
+database
+    MONGO DB
+    MYSQL
+
+DevOps
+    GIT
+    CI/CD
+    AWS
+
+UI tools
+    TAILWIND CSS
+    HEADLESS UI
+
+others
+    FIGMA
+
+
+Projects
+
+title - Ticketing system for query resolving
+desc -  Zen Class Query Resolving Platform for mentor and student
+        A real time status update on query and real time chat feature
+
+built - html, css, react, node js, socket.io, tailwind css 
+url -
+
+title - E Commerce Website
+desc -  To buy products in online and checkout the products
+        Sellers can post new Products.
+built - html, css, react, node js, tailwind css, Redux
+integerated - stripe for payment
+
+title - Google Drive Clone
+desc -  Store, share, and collaborate on files and folders 
+        from any mobile device, tablet, or computer.
+built - html, css, react, node js, tailwind css, AWS S3 for storing files
+
+
+title - User and Profile CRUD
+desc -  Create Read Update Delete operation for User and User-Profile.
+
+built - html, css, react, node js, tailwind css, Redux, graphQL
