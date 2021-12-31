@@ -35,7 +35,7 @@ const projects = [
     },
     {
         title: "E Commerce Website",
-        desc: "To buy products in online and checkout the products. Sellers can post new Products. Integerated Stripe For Payment",
+        desc: "To buy products in online and checkout the products. Sellers can post new Products. Integrated with Stripe For Payment",
         built: ["html", "css", "react", "nodejs", "express", "mongodb", "tailwindcss", "redux"],
         integerated: " stripe for payment",
         image: "ecommerce",
@@ -98,6 +98,12 @@ const projects = [
             frontend: "https://github.com/Meyazhagan/user-profile-crud-frontend",
             backend: "https://github.com/Meyazhagan/user-profile-crud-backend",
         },
+        demoCredential: [
+            {
+                email: "demo@gmail.com",
+                password: "12345",
+            },
+        ],
     },
 ];
 

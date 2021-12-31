@@ -4,7 +4,6 @@ import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { RiMenu3Fill } from "react-icons/ri";
 import classNames from "classnames";
 import { IoCloseOutline } from "react-icons/io5";
-import GithubButton from "./common/GithubButton";
 
 const NavList = ({ children }) => {
     return <ul className="flex justify-center items-center gap-4">{children}</ul>;
@@ -22,6 +21,25 @@ const Link = ({ children, ...rest }) => {
                 {...rest}>
                 {children}
             </a>
+        </li>
+    );
+};
+
+const MenuButton = ({ children, href, setOpen }) => {
+    return (
+        <li className="text-center">
+            <button
+                onClick={() => {
+                    setOpen(false);
+                    window.location = href;
+                }}
+                className={`dark:text-slate-300 text-slate-800 
+                hover:font-semibold font-mono hover:bg-gray-100
+                dark:hover:bg-slate-800 rounded-lg tracking-widest 
+                transition-dark
+                px-4 py-3 cursor-pointer `}>
+                {children}
+            </button>
         </li>
     );
 };
@@ -128,21 +146,23 @@ function Header() {
                     </div>
                     <div className="absolute inset-0 flex flex-col justify-center items-center  h-screen z-30 dark:bg-slate-700 bg-slate-50">
                         <ul className="space-y-10">
-                            <Link setOpen={setOpen} href="#home">
+                            <MenuButton setOpen={setOpen} href="#home">
                                 Home
-                            </Link>
-                            <Link setOpen={setOpen} href="#about">
+                            </MenuButton>
+                            <MenuButton setOpen={setOpen} href="#about">
                                 About
-                            </Link>
-                            <Link setOpen={setOpen} href="#skill">
+                            </MenuButton>
+                            <MenuButton setOpen={setOpen} href="#skill">
                                 Skill
-                            </Link>
-                            <Link setOpen={setOpen} href="#project">
+                            </MenuButton>
+                            <MenuButton setOpen={setOpen} href="#project">
                                 Project
-                            </Link>
-                            <div className="rounded-lg px-4 py-2 dark:bg-teal-600 bg-teal-500 text-white font-mono">
-                                Hire Me
-                            </div>
+                            </MenuButton>
+                            <MenuButton setOpen={setOpen} href="#hire-me">
+                                <div className="rounded-lg px-4 py-2 dark:bg-teal-600 bg-teal-500 text-white font-mono">
+                                    Hire Me
+                                </div>
+                            </MenuButton>
                         </ul>
                     </div>{" "}
                 </>

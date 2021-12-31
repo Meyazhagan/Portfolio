@@ -14,7 +14,7 @@ function About() {
                 <div className="text-justify space-y-4 max-w-[45ch] tracking-wide ">
                     <p>
                         I'm a Full Stack Web Application Developer, I have been studying web
-                        development and I develope primarily with{" "}
+                        development and I develop primarily with{" "}
                         <em className="font-semibold not-italic underline underline-offset-2 dark:decoration-blue-400 decoration-blue-500">
                             React
                         </em>{" "}
@@ -22,7 +22,7 @@ function About() {
                         <em className="font-semibold not-italic underline underline-offset-2 dark:decoration-green-400 decoration-green-500">
                             Node.js,
                         </em>{" "}
-                        though I have a good knownledge of Python, Java.
+                        though I have a good knowledge of Python, Java.
                     </p>
                     <p>
                         I used to provide responsive Frontend interfaces, Backend development and
