@@ -4,23 +4,9 @@ import { BsSuitHeartFill } from "react-icons/bs";
 import ResumeButton from "../Components/common/ResumeButton";
 import { IoSend } from "react-icons/io5";
 import { AiOutlineArrowDown } from "react-icons/ai";
-
-const ButtonOutline = ({ children, ...rest }) => {
-    return (
-        <a
-            className="px-4 border-2  py-2 flex-shrink-0
-    flex items-center gap-2 group
-    border-teal-600 text-teal-600 
-    dark:border-teal-500 dark:text-teal-500 
-    hover:bg-teal-600 hover:text-white
-    dark:hover:border-teal-700
-    dark:hover:bg-teal-700 dark:hover:text-white
-    rounded-lg transition-dark"
-            {...rest}>
-            {children}
-        </a>
-    );
-};
+import { BsGithub } from "react-icons/bs";
+import ButtonOutline from "../Components/common/ButtonOutline";
+import GithubButton from "../Components/common/GithubButton";
 
 function Home() {
     return (
@@ -38,6 +24,7 @@ function Home() {
                 </div>
 
                 <div className="mt-5 flex gap-4">
+                    <GithubButton />
                     <ButtonOutline href="#hire-me">
                         Contact Me
                         <IoSend className="group-hover:-rotate-45 transform transition-transform" />

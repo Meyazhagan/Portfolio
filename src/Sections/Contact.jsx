@@ -23,7 +23,10 @@ function Contact() {
                 />
             </div>
             <div className="dark:bg-slate-800 transition-dark dark:text-slate-100 text-slate-800 bg-slate-200 rounded-lg py-2 px-4  col-span-12 flex flex-col">
-                <label htmlFor="message">Message</label>
+                <div className="flex item-center gap-2">
+                    <label htmlFor="message">Message</label>
+                    <div className="text-red-500"></div>
+                </div>
                 <textarea
                     name="message"
                     className="bg-transparent focus:outline-none py-1"

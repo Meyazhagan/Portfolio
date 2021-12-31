@@ -14,10 +14,7 @@ function App() {
                 ">
                     <Header />
 
-                    <div className="">
-                        <Main />
-                    </div>
-                    <Footer />
+                    <Main />
                 </div>
             </Theme>
         </AppProvider>

@@ -7,7 +7,7 @@ function Career() {
         <section className="flex flex-col items-center">
             <div className="dark:bg-slate-800 bg-slate-200 transition-dark p-8 rounded-xl">
                 <div className="flex gap-8 justify-between">
-                    <div className="dark:text-slate-200 text-slate-900 transition-dark">
+                    <div className="dark:text-slate-200 text-slate-900 transition-dark ">
                         <h2 className="text-2xl font-bold">Have a Carrer Opportunity?</h2>
                         {/* <div className="block">Contact me</div> */}
                         <a

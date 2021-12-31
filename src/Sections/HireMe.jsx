@@ -5,6 +5,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5";
 import Contact from "./Contact";
 import ResumeButton from "../Components/common/ResumeButton";
+import { BsGithub } from "react-icons/bs";
 
 function HireMe() {
     return (
@@ -18,7 +19,7 @@ function HireMe() {
                     <span></span>
                     <a
                         href="tel:8667283263"
-                        className="dark:text-slate-400 mb-4 text-slate-800 transition-dark">
+                        className="dark:text-slate-400 mb-4 text-slate-800 transition-dark hover:underline decoration-teal-400 underline-offset-1 ">
                         +91 86672 83263
                     </a>
 
@@ -28,7 +29,7 @@ function HireMe() {
                     <span></span>
                     <a
                         href="mailto:meyazhagan.ofcl@gmail.com"
-                        className="dark:text-slate-400 mb-4 text-slate-800 transition-dark">
+                        className="dark:text-slate-400 mb-4 text-slate-800 transition-dark hover:underline decoration-teal-400 underline-offset-1 ">
                         meyazhagan.ofcl@gmail.com
                     </a>
 
@@ -36,12 +37,21 @@ function HireMe() {
 
                     <div className="text-lg uppercase">Location</div>
                     <span></span>
-                    <div className="dark:text-slate-400 mb-4 text-slate-800 transition-dark">
+                    <div className="dark:text-slate-400 mb-4 text-slate-800 transition-dark hover:underline decoration-teal-400 underline-offset-1 ">
                         Namakkal, Tamil Nadu.
                     </div>
 
-                    <span className="text-teal-600 font-bold">CV</span>
+                    <span className="text-teal-600 font-bold">
+                        <BsGithub />
+                    </span>
+                    <a
+                        href="https://github.com/Meyazhagan"
+                        className="dark:text-slate-400 hover:underline decoration-teal-400 underline-offset-1 text-slate-800 transition-dark">
+                        https://github.com/Meyazhagan
+                    </a>
+                    <div className="col-span-full mb-4"></div>
 
+                    <span className="text-teal-600 font-bold">CV</span>
                     <ResumeButton />
                 </div>
                 <div>

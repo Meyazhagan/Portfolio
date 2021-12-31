@@ -6,6 +6,7 @@ import HireMe from "../Sections/HireMe";
 import Home from "../Sections/Home";
 import Projects from "../Sections/Projects";
 import Skill from "../Sections/Skills";
+import Footer from "./Footer";
 
 function Main() {
     return (
@@ -26,6 +27,7 @@ function Main() {
             <Projects />
             {/* ======== Hire Me ========= */}
             <HireMe />
+            <Footer />
         </div>
     );
 }

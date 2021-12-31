@@ -94,9 +94,9 @@ const projects = [
         ],
 
         url: {
-            live: "",
-            frontend: "",
-            backend: "",
+            live: "https://user-profile-crud-gql-redux.netlify.app/",
+            frontend: "https://github.com/Meyazhagan/user-profile-crud-frontend",
+            backend: "https://github.com/Meyazhagan/user-profile-crud-backend",
         },
     },
 ];

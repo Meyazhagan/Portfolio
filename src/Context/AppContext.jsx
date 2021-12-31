@@ -7,7 +7,7 @@ const useAppContext = () => {
 };
 
 const initialState = {
-    darkMode: true,
+    darkMode: JSON.parse(localStorage.getItem("theme")) ?? true,
 };
 
 function AppProvider({ children }) {
@@ -21,11 +21,13 @@ const action = {
 function appStateReducer(state = initialState, action) {
     switch (action.type) {
         case "TOGGLE_DARK_MODE":
+            localStorage.setItem("theme", !state.darkMode);
             return {
                 ...state,
                 darkMode: !state.darkMode,
             };
         default:
+            localStorage.setItem("theme", state.darkMode);
             return state;
     }
 }
