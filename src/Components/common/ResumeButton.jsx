@@ -10,14 +10,14 @@ function ResumeButton() {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <button
+            <div
                 onClick={() => setOpen((prev) => !prev)}
                 className="text-left 
                 flex  items-center
                 gap-2 group flex-shrink-0
                 pr-4 py-2 w-fit relative
                 dark:bg-teal-700 bg-teal-600 rounded-lg hover:shadow-md">
-                <AiOutlineArrowRight className="group-hover:rotate-90 text-white transform transition-transform ml-2" />
+                <AiOutlineArrowRight className={`${open ? "rotate-90" : ""} text-white transform transition-transform ml-2`} />
                 <span className="text-sm text-white">MY RESUME</span>
                 {open && (
                     <div className="absolute -bottom-12 flex gap-2">
@@ -50,7 +50,7 @@ function ResumeButton() {
                         </a>
                     </div>
                 )}
-            </button>
+            </div>
         </>
     );
 }
