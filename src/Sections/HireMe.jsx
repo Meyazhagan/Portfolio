@@ -46,6 +46,7 @@ function HireMe() {
                     </span>
                     <a
                         href="https://github.com/Meyazhagan"
+                        target={"_blank"}
                         className="dark:text-slate-400 hover:underline decoration-teal-400 underline-offset-1 text-slate-800 transition-dark">
                         https://github.com/Meyazhagan
                     </a>

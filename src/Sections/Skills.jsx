@@ -19,9 +19,16 @@ import { SiExpress } from "react-icons/si";
 const Card = ({ src, alt, children }) => {
     return (
         <div
-            className="p-4 m-2 w-20 h-20 flex justify-center items-center
-        bg-slate-200  dark:bg-slate-800  rounded-lg transition-dark">
+            className="p-4 m-2 w-20 h-20 flex justify-center items-center relative
+            bg-slate-200  dark:bg-slate-800  rounded-lg transition-dark group">
             {children ? children : <img className=" fill-white" src={src} alt={alt} />}
+            <div
+                className="absolute bottom-[95%] right-[95%] z-[5] hidden
+                group-hover:block text-white
+                bg-teal-500  dark:bg-teal-900  rounded-md transition-dark 
+                px-2 py-1 w-fit whitespace-nowrap">
+                {alt}
+            </div>
         </div>
     );
 };
@@ -36,32 +43,32 @@ function Skill() {
             <Heading title="Skill" />
             <div className="flex items-center md:flex-row flex-col my-10">
                 <div className="flex flex-row md:flex-col ">
-                    <Card src={git} alt="" />
+                    <Card src={git} alt="Git" />
                 </div>
                 <div className="flex flex-row md:flex-col ">
-                    <Card src={gql} alt="" />
-                    <Card src={mysql} alt="" />
+                    <Card src={gql} alt="GraphQL" />
+                    <Card src={mysql} alt="MySQL" />
                 </div>
                 <div className="flex flex-row md:flex-col ">
-                    <Card src={nodejs} alt="" />
-                    <Card src={mongodb} alt="" />
-                    <Card>
+                    <Card src={nodejs} alt="Node Js" />
+                    <Card src={mongodb} alt="Mongo DB" />
+                    <Card alt={"Express"}>
                         <SiExpress size={"2rem"} />
                     </Card>
                 </div>
                 <div className="flex flex-row md:flex-col ">
-                    <Card src={html} alt="" />
-                    <Card src={css} alt="" />
-                    <Card src={js} alt="" />
-                    <Card src={tailwind} alt="" />
+                    <Card src={html} alt="HTML" />
+                    <Card src={css} alt="CSS" />
+                    <Card src={js} alt="Javascript" />
+                    <Card src={tailwind} alt="Tailwind CSS" />
                 </div>
                 <div className="flex flex-row md:flex-col ">
-                    <Card src={react} alt="" />
-                    <Card src={redux} alt="" />
-                    <Card src={router} alt="" />
+                    <Card src={react} alt="React" />
+                    <Card src={redux} alt="Redux" />
+                    <Card src={router} alt="Router" />
                 </div>
                 <div className="flex flex-row md:flex-col ">
-                    <Card>
+                    <Card alt={"AWS"}>
                         <svg
                             className="dark:fill-white w-14 transition-dark"
                             xmlns="http://www.w3.org/2000/svg"
@@ -73,10 +80,10 @@ function Skill() {
                             />
                         </svg>
                     </Card>
-                    <Card src={figma} alt="" />
+                    <Card src={figma} alt="Figma" />
                 </div>
                 <div className="flex flex-row md:flex-col ">
-                    <Card src={mui} alt="" />
+                    <Card src={mui} alt="Material UI" />
                 </div>
             </div>
         </div>
