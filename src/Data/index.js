@@ -78,7 +78,7 @@ const projects = [
         ],
     },
     {
-        title: "User and Profile CRUD",
+        title: "User Role Management",
         desc: "Create Read Update Delete operation for User and User-Profile. Using GraphQL and Redux.",
         image: "user_and_profile",
         built: [
