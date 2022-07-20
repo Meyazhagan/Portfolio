@@ -19,7 +19,7 @@ import { SiExpress } from "react-icons/si";
 const Card = ({ src, alt, children }) => {
     return (
         <div
-            className="p-4 m-2 w-20 h-20 flex justify-center items-center relative
+            className="p-4 m-2 sm:w-20 sm:h-20 w-14 h-14 flex justify-center items-center relative
             bg-slate-200  dark:bg-slate-800  rounded-lg transition-dark group">
             {children ? children : <img className=" fill-white" src={src} alt={alt} />}
             <div

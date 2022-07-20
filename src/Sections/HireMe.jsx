@@ -41,9 +41,9 @@ function HireMe() {
                         Namakkal, Tamil Nadu.
                     </div>
 
-                    <span className="text-teal-600 font-bold">
-                        <BsGithub />
-                    </span>
+                    <BsGithub  size={"1.25rem"} className="text-teal-600" />
+                    <div className="text-lg uppercase">Github</div>
+                    <span></span>
                     <a
                         href="https://github.com/Meyazhagan"
                         target={"_blank"}

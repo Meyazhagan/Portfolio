@@ -12,7 +12,7 @@ function Home() {
     return (
         <div
             id="home"
-            className="relative min-h-screen scroll-mt-20 flex-col md:flex-row flex items-center justify-evenly">
+            className="relative min-h-screen scroll-mt-28 flex-col md:flex-row flex items-center justify-evenly">
             <div className="text font-nunito">
                 <div className="md:text-5xl text-2xl">
                     Hi there,

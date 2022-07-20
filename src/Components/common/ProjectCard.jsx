@@ -62,7 +62,7 @@ const ProjectCard = ({ project }) => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="flex gap-4 my-10 justify-center md:items-start items-center md:flex-row flex-col w-fit">
+        <div className="flex gap-4 my-10 justify-center md:items-start items-center md:flex-row flex-col w-full">
             <div className="p-4 group transition-dark bg-slate-200 dark:bg-slate-800 rounded-lg ">
                 <div className="overflow-hidden rounded-lg shadow-lg">
                     <img
@@ -87,7 +87,7 @@ const ProjectCard = ({ project }) => {
                         </div>
                     ))}
                 </div>
-                <div className="space-x-4 flex justify-between">
+                <div className="space-y-4 flex justify-between flex-col sm:space-y-0 sm:flex-row">
                     <Button link={url.live}>
                         Live
                         <BiLinkExternal />

@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 function Main() {
     return (
-        <div className="md:px-24 px-10  overflow-y-scroll h-screen scrollbar scrollbar-thumb-indigo-200 scrollbar-thin scroll-smooth ">
+        <div className="md:px-24 px-4  overflow-y-scroll h-screen scrollbar scrollbar-thumb-indigo-200 scrollbar-thin scroll-smooth ">
             {/* ======== home ========= */}
             <Home />
             {/* ======== About Me ========= */}
